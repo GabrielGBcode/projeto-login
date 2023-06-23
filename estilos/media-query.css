@@ -7,6 +7,7 @@
 
   section#login {
     width: 80vw;
+    height: 340px;
   }
 
   section#login > div#imagem {
@@ -21,13 +22,6 @@
     float: right;
     width: 60%;
   }
-
-  /* ------------------- */
-  div#formulario::before {
-    content: "Tablet";
-    font-size: 2em;
-  }
-  /* -------------------- */
 
   div#formulario > h1 {
     font-size: 2em;
@@ -45,6 +39,7 @@
 
   section#login {
     width: 930px;
+    height: 400px;
   }
 
   section#login > div#imagem {
@@ -60,18 +55,12 @@
     width: 50%;
   }
 
-  /* ------------------- */
-  div#formulario::before {
-    content: "Telas Grandes";
-    font-size: 2em;
-  }
-  /* -------------------- */
-
   div#formulario > h1 {
     font-size: 3em;
   }
 
   div#formulario > p {
     font-size: 1.3em;
+    margin: 20px 0px;
   }
 }

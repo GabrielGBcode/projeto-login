@@ -32,17 +32,14 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
-
   background-color: white;
   width: 300px;
-  height: 575px;
+  height: 585px;
   border-radius: 20px;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
   transition: width 0.2s, height 0.2s;
+  transform: translate(-50%, -50%);
   transition-timing-function: ease;
 }
 
@@ -75,12 +72,37 @@ form > div.campo {
   display: block;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
+  border: 2px solid var(--lilas);
+  border-radius: 8px;
   margin: 5px 0px;
 }
 
-form label {
+div.campo > label {
   display: none;
+}
+
+div.campo > i {
+  color: #ffffff;
+  /* background-color: black; */
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+div.campo > input {
+  background-color: var(--light-verde);
+  font-size: 1.1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-10px);
+}
+
+div.campo > input:focus-within {
+  background-color: #ffffff;
+  border: none;
 }
 
 .material-symbols-outlined {
@@ -108,7 +130,7 @@ form > a.botao {
   text-align: center;
   font-size: 1em;
   width: 100%;
-  height: 40px;
+  height: 50px;
   padding-top: 7px;
   margin-top: 5px;
   color: var(--dark-verde);
@@ -123,5 +145,7 @@ form > a.botao:hover {
 }
 
 form > a.botao > i {
-  font-size: 1em;
+  border: none;
+  padding: 0px;
+  transform: translateY(6px);
 }
